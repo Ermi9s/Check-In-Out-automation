@@ -1,9 +1,11 @@
-from telethon import TelegramClient, events, Button
 import asyncio
+from automation_server.settings import TG_HASH,TG_ID,BOT
+from telethon import TelegramClient, events
 
-api_id = 1449955
-api_hash = 'd57bfe6bd0e6b76470655bf13232dc12'
-bot_username = 'A2SVBouncerbot'
+
+api_id = TG_ID
+api_hash = TG_HASH
+bot_username = BOT
 
 client = TelegramClient('checkout_session', api_id, api_hash)
 
