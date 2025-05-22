@@ -3,7 +3,7 @@ from telethon import TelegramClient, events
 from automation_server.settings import TG_HASH,TG_ID,BOT
 
 
-api_id = TG_ID
+api_id = int(TG_ID)
 api_hash = TG_HASH
 bot_username = BOT
 
